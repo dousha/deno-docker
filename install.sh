@@ -49,7 +49,7 @@ if [ ! -d "$bin_dir" ]; then
 	mkdir -p "$bin_dir"
 fi
 
-wget -q --show-progress -O "$exe.zip" "$deno_uri"
+wget -q -O "$exe.zip" "$deno_uri"
 unzip -d "$bin_dir" -o "$exe.zip"
 chmod +x "$exe"
 rm "$exe.zip"
