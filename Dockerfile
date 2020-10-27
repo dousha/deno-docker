@@ -1,7 +1,6 @@
-FROM alpine
+FROM busybox:glibc
 ENV DENO_INSTALL="/root/.deno"
 ENV PATH="${DENO_INSTALL}/bin:${PATH}"
-RUN apk add curl unzip libgcc gcompat libc6-compat
 WORKDIR /root
 COPY install.sh .
 RUN chmod +x install.sh \

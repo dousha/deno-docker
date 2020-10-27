@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ busybox ]
   pull_request:
-    branches: [ master ]
+    branches: [ busybox ]
 
 jobs:
   build:
@@ -23,5 +23,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: dousha99/deno:latest
+        tags: dousha99/deno:latest-busybox
 

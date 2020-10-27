@@ -1,8 +1,10 @@
-# deno on Alpine
+# deno on Busybox
 
 ## Usage
 
+Interactive shell:
+
 ```
-$ docker pull dousha99/deno
+$ docker run -it dousha99/deno:latest-busybox
 ```
 
