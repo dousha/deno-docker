@@ -7,5 +7,5 @@ COPY install.sh .
 RUN chmod +x install.sh \
 	&& ./install.sh
 
-CMD [ "deno" ]
+ENTRYPOINT [ "deno" ]
 
